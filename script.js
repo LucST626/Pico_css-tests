@@ -10,3 +10,14 @@
     console.log(b)
     a++
     console.log(a)
+
+
+    let contador = 0
+    function suma(){
+        contador++
+        document.querySelector(".contador").innerHTML.value
+    }
+    function resta(){
+        contador--
+        document.querySelector(".contador").innerHTML.value
+    }
