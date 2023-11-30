@@ -44,15 +44,9 @@
     <h1>Hola Mundo</h1>
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur accusamus tenetur at quisquam qui minima tempora blanditiis exercitationem sit, facere asperiores animi a impedit sequi debitis cum facilis. Temporibus, dolorum!</p>
 </article>
-<input type="range" max="100" min="0" value="0" onchange="update()">
-<progress max="100" min="0" value="50" id="progressbar"></progress>
-
+<input type="range" max="100" min="0" value="0" oninput="update()" id="range">
+<progress type="range" max="100" min="0" value="0" id="progressbar"></progress>
     </section>
-<script>
-    function update(){
-        const data = document.querySelector("#range").value
-        document.querySelector("#progressbar").value = data
-    }
-</script>
+<script src="script.js"></script>
 </body>
 </html>
