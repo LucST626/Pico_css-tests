@@ -7,8 +7,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
 </head>
 <body>
+    <nav class="container-fluid">
+
+    </nav>
     <section class="container">
-        <h1>Hola mundo</h1>
+        <marquee behavior="alternate" direction="up">
+            <h1>Hola mundo</h1>
+        </marquee>
         <div class="grid">
             <button>Click</button>
             <button class="secondary">Click</button>
@@ -18,7 +23,36 @@
             <input type="text" placeholder="Valid" aria-invalid="false">
             <input type="text" placeholder="Invalid" aria-invalid="true">
         </div>
-    </section>
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+            <li>Item 6</li>
+        </ol>
 
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+
+<article data-theme="light">
+    <h1>Hola Mundo</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur accusamus tenetur at quisquam qui minima tempora blanditiis exercitationem sit, facere asperiores animi a impedit sequi debitis cum facilis. Temporibus, dolorum!</p>
+</article>
+<input type="range" max="100" min="0" value="0" onchange="update()">
+<progress max="100" min="0" value="50" id="progressbar"></progress>
+
+    </section>
+<script>
+    function update(){
+        const data = document.querySelector("#range").value
+        document.querySelector("#progressbar").value = data
+    }
+</script>
 </body>
 </html>
